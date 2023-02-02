@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    /* background-image: url('izohips.png'), linear-gradient(to right, #F63D68, #8845C3); */
+    /*şu ikisini düzgün birleştiremedim bunu sonra yine dene*/
+    background: linear-gradient(to right, #F63D68, #6a06c2);
+}
+
+.menuSection {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: fixed;
+    /* fixed yapmazsan position sticky olduğunda arka planları sayfa arkaplanından farklı oluyor unutma */
+}
+
+@media only screen and (max-width: 600px) {
+    .menuSection {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: sticky;
+        top: 0;
+        background: fixed;
+    }
+}
+
+.menuContent {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    background: #FFC600;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .menuContent {
+        font-size: 14px;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+        background: #FFC600;
+        width: 300px;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+.menuContent:hover {
+    background: linear-gradient(to right, #3dc2f6, #8845C3, #0918f3);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+
+.mainImage {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 150px;
+    margin-right: 180px;
+    /* !!!!!!!!!!! aşağıdaki açıklama */
+    height: 500px;
+    /* kapsayıcısına yüzdesel olarak genişlik verince sayfa küçüldüğünde birbirine girmeden çözünürlük oranında küçülüyor burda bi yanlışlık var!!!!!*/
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainImage {
+        display: flex;
+        flex-direction: column;
+        background: fixed;
+        width: 53%;
+        gap: 40px;
+    }
+}
+
+.fajitaImg {
+    width: 75%;
+    /* kapsayıcısına yüzdesel olarak genişlik verince sayfa küçüldüğünde birbirine girmeden çözünürlük oranında küçülüyor */
+    height: 500px;
+    border-radius: 5px;
+    position: absolute;
+    background: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .fajitaImg {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        background: fixed;
+        /* gap: 10px; */
+    }
+}
+
+.fajitaImgText-1 {
+    margin-top: 250px;
+    margin-left: 40px;
+    background: #FFC600;
+    position: relative;
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .fajitaImgText-1 {
+        margin-top: 120px;
+        margin-left: 4px;
+        width: fit-content;
+        height: 20px;
+        font-size: 15px;
+        position: relative;
+        background: #FFC600;
+    }
+}
+
+.fajitaImgText-2 {
+    margin-top: 20px;
+    margin-left: 40px;
+    background: #FFC600;
+    position: relative;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+    .fajitaImgText-2 {
+        margin-top: 3px;
+        margin-left: 4px;
+        width: fit-content;
+        height: 13px;
+        font-size: 10px;
+        position: relative;
+        background: #FFC600;
+    }
+}
+
+
+.priceSection {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    height: 500px;
+    background: #FFC600;
+    background: fixed;
+    width: 23%;
+    /* kapsayıcısına yüzdesel olarak genişlik verince sayfa küçüldüğünde birbirine girmeden çözünürlük oranında küçülüyor */
+    gap: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .priceSection {
+        grid-template-columns: auto;
+        height: 300px;
+        font-size: 10px;
+        background: fixed;
+        gap: 10px;
+    }
+}
+
+.priceBox {
+    height: 240px;
+    background: #FFC600;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .priceBox {
+        width: 300px;
+        height: 150px;
+        background: #FFC600;
+        border-radius: 5px;
+        /* gap: 10px; */
+    }
+}
+
+.priceTag {
+    color: black;
+    height: 22px;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    background: fixed;
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .priceTag {
+        height: 60px;
+        font-size: 40px;
+        background: #FFC600;
+        padding-top: 40px;
+        border-radius: 5px;
+    }
+}
+
+.productName {
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    background: fixed;
+    padding-top: 85px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .productName {
+        font-size: 15px;
+        background: #FFC600;
+        padding-top: 15px;
+    }
+}
+
+.products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* Extra small devices (phones, 600px and down) /////  Eğer ekran max-width değerinden daha küçük bir değere düştüğünde */
+@media only screen and (max-width: 600px) {
+
+    /* divler veya kutular çözünürlüğe göre ekran ölçüsünde sıralanıyor hover özelliği gibi her dive ayrı ayrı vermen gerekiyor */
+    .products {
+        grid-template-columns: auto;
+        row-gap: 10px;
+        background: fixed;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px),(min-width: 900px) {    buraya herhangi bir değer yaptığımda büyük ekranda da gerçekleşiyor ve default değeri patlatıyor
+    .products{
+        grid-template-columns: auto auto ;
+    }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {} */
+
+.box {
+    height: 175px;
+    background: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.fa-solid {
+    font-size: 2.8rem;
+    background: fixed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #730dcc;
+}
+
+.boxProducts {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background: fixed;
+
+}
+
+.productDescription {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: fixed;
+}
+
+.box:hover {
+    background: linear-gradient(to right, #3dc2f6, #8845C3, #0918f3);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+
+
+.bigBox {
+    margin-top: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    width: 100vm;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .bigBox {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        height: 200px;
+        background: #fff;
+        border-radius: 5px;
+        gap: 5px;
+    }
+}
+
+.tacoImg {
+    margin-left: 5px;
+    background: #fff;
+    height: 35vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .tacoImg {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.tacoDescription {
+    background: fixed;
+}
+
+
+.tacoHead {
+    background: fixed;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .tacoHead {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+}
+
+.tacoDesc {
+    background: fixed;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+    .tacoDesc {
+        font-size: 10px;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+
+    }
+}
+
+.tacoButton {
+    background: fixed;
+    background-color: #FFC600;
+    border-style: none;
+    height: 30px;
+    width: 8rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .tacoButton {
+        background-color: #FFC600;
+        border-style: none;
+        height: 18px;
+        width: 5rem;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+}
+
+
+.tacoButton:hover {
+    background: linear-gradient(to right, #3dc2f6, #8845C3, #0918f3);
+    color: rgb(37, 33, 36);
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.hrSection {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hrleft {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-right: 10px;
+    width: 600px;
+    height: 14px;
+    background: linear-gradient(to right, transparent, #f1db9f, #FFC600);
+    border-style: none;
+    padding-left: 70px;
+}
+
+.hrright {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 150px;
+    width: 600px;
+    height: 14px;
+    background: linear-gradient(to right, #FFC600, #f1db9f, transparent);
+    border-style: none;
+    padding-right: 70px;
+}
+
+.hrDesc {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background: fixed;
+    width: 130px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.bottomBoxGroup {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background: fixed;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .bottomBoxGroup {
+        grid-template-columns: auto;
+
+    }
+
+}
+
+.bottombox {
+    height: 20vh;
+    background: fixed;
+    border-radius: 5px;
+}
+
+.bottombox:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: 0.2s;
+}
+
+.bottomImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
